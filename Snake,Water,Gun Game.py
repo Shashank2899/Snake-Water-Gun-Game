@@ -4,11 +4,12 @@ Win=0
 Equal=0
 loose=0
 while count<=10:
-    user=input('Snake or Water or Gun:')
+    user=input('Enter Snake or Water or Gun:')
+    print('You Select :',user)
     if user=='Gun':
         lst=["Snake","Water","Gun"]
         choice=random.choice(lst)
-        print('Computer:',choice)
+        print('Computer choice:',choice)
         if choice=='Snake':
             Win=Win+1
             print('You Won')
@@ -21,7 +22,7 @@ while count<=10:
     elif user=='Water':
         lst=["Snake","Water","Gun"]
         choice=random.choice(lst)
-        print('Computer:',choice)
+        print('Computer choice:',choice)
         if choice=='Snake':
             loose=loose+1
             print('You Loose')
@@ -34,7 +35,7 @@ while count<=10:
     else:
         lst=["Snake","Water","Gun"]
         choice=random.choice(lst)
-        print('Computer:',choice)
+        print('Computer choice:',choice)
         if choice=='Water':
             Win=Win+1
             print('You Win')
